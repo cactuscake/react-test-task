@@ -1,5 +1,6 @@
 import React from "react";
 import SeminarItem from "../SeminarItem/SeminarItem";
+import "./SeminarList.css";
 
 function SeminarList({ seminars, setSeminars }) {
   //Функция удаления семинаров
@@ -11,7 +12,7 @@ function SeminarList({ seminars, setSeminars }) {
   };
 
   return (
-    <div>
+    <div className="seminar-list">
       {seminars.map((seminar) => (
         <SeminarItem
           key={seminar.id}
